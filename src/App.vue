@@ -35,7 +35,7 @@
         <div class="hero-right">
           <div class="photo-frame">
             <!-- Ganti src dengan path foto kamu, contoh: src="/src/assets/foto.jpg" -->
-         <img :src="'./src/assets/self.png'" alt="Foto Profil" class="hero-photo" />
+         <img src="/self.png" alt="Foto Profil" class="hero-photo" />
             <div class="photo-badge">
               <span class="badge-dot"></span>
               Tersedia untuk hire
