@@ -671,13 +671,28 @@ footer {
 
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
-  .hero-inner { grid-template-columns: 1fr; }
-  .hero-right { display: none; }
+  .hero-inner { grid-template-columns: 1fr; gap: 3rem; }
+  .hero-right { justify-content: flex-start; }
   .about-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 640px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem 5vw;
+  }
+  .nav-links {
+    width: 100%;
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding-bottom: 0.5rem;
+    gap: 1.5rem;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links { scrollbar-width: none; }
+  
   .exp-item { grid-template-columns: 1fr; gap: 0.5rem; }
-  .nav-links { display: none; }
   .hero-scroll { display: none; }
   .hero-stats { gap: 1.5rem; }
   footer { flex-direction: column; gap: 0.5rem; text-align: center; }
